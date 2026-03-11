@@ -1,23 +1,16 @@
 # Deterministic Commit Boundary
 
-A deterministic commit boundary is a system layer that ensures only validated and auditably approved actions progress to irreversible execution. It sits between the probabilistic reasoning stage—where decisions are made under uncertainty—and the deterministic execution stage—where actions permanently alter system state or the real world.
+The deterministic commit boundary is a system constraint applied before any irreversible action is taken. It represents a mandatory, final checkpoint that separates the uncertainty of decision-making from the certitude of execution.
 
-## Why is This Needed?
+## Key Concept
 
-Probabilistic reasoning (e.g., predictions, risk scores, or AI outputs) may be valuable and informative, but it is inherently uncertain. Allowing such reasoning to directly control critical, irreversible actions can lead to loss, duplication, or catastrophic mistakes.
+- **Probabilistic Reasoning:** Involves uncertain or statistical processes, such as predictions or AI.
+- **Deterministic Execution:** Only actions that have passed the commit boundary are executed exactly once and are irreversibly recorded.
 
-A deterministic commit boundary:
+## Why Is This Necessary?
 
-- Isolates uncertainty from action
-- Binds every irreversible operation to a clear, traceable decision point
-- Ensures consistency, auditability, and exactly-once results
+Without a deterministic commit boundary, probabilistic processes can lead to duplicated, skipped, or unsafe actions—particularly in high-stakes domains. The boundary enforces auditability, safety, and accountability.
 
-## Conceptual Structure
+## Safety and Public Relevance
 
-- **Input:** Recommendations, events, or orders from probabilistic processes
-- **Boundary:** Deterministic, recorded vetting and commitment process
-- **Output:** Irreversible action, executed exactly once
-
-## Public Safety Consideration
-
-This approach is designed to prevent both silent failure and unintended repetition of actions—especially in safety-critical, financial, or autonomous system workflows.
+This conceptual separation is crucial in safety-critical workflows, finance, automation, and systems where irreversible outcomes must be strictly managed. No implementation or architectural details are disclosed here.

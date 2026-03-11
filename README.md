@@ -1,14 +1,14 @@
 # SnapSpace
 
-SnapSpace is a deterministic execution layer for handling irreversible actions. The core thesis is that probabilistic reasoning—such as predictions from AI or statistical models—should not have direct control over actions that cannot be undone. Instead, SnapSpace enforces a deterministic commit boundary: a system layer that evaluates, approves, and coordinates execution, ensuring exactly-once outcomes for critical operations.
+SnapSpace is a deterministic execution layer for handling irreversible actions in complex environments. Its core thesis is that probabilistic reasoning—such as predictive algorithms or machine learning—should not have direct control over operations that cannot be undone. Instead, SnapSpace implements a deterministic commit boundary: a reliable system checkpoint for approving and executing critical actions exactly once.
 
-SnapSpace is not an application but a reusable execution substrate. It provides foundational infrastructure for reliable, auditable execution under uncertainty, adaptable to a range of industries and high-stakes scenarios.
+Rather than being a single application, SnapSpace serves as a reusable execution substrate applicable across a wide range of demanding domains and safety-critical workflows.
 
 ## Core Principles
 
-- **Deterministic Commit Boundary:** Irreversible actions must pass through a controlled, auditable commit layer.
-- **Exactly-Once Execution:** Prevents duplication, loss, or race conditions in high-impact operations.
-- **Decoupled Reasoning and Execution:** Separates probabilistic logic from critical deterministic processes.
+- **Deterministic Commit Boundary:** Imposes a final, auditable checkpoint for irreversible actions.
+- **Exactly-Once Execution:** Ensures critical operations occur neither more nor less than intended, even in adverse conditions.
+- **Clear Separation:** Divides probabilistic input from deterministic execution.
 
 ## Potential Industry Verticals
 
@@ -27,4 +27,4 @@ SnapSpace is not an application but a reusable execution substrate. It provides 
 - [Deterministic Commit Boundary](docs/deterministic-commit-boundary.md)
 - [Public Positioning](docs/public-positioning.md)
 
-**Note:** This repository is for public-facing documentation and concept discussion only. It does not contain code, implementation details, or internal architectural specifics.
+**Note:** This repository contains public-facing documentation only. It does not include code or private implementation details.
